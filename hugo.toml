@@ -1,0 +1,24 @@
+baseURL = 'https://example.org/'
+languageCode = 'ru-RU'
+theme = "hyde-hyde"
+title = 'techpedia'
+
+[params]
+  description = "Техническая энциклопедия"
+  dateformat = "02.01.2006"
+  copyright = "Техпедия. Киров"
+
+[menu]
+  [[menu.main]]
+    name = "шаг за шагом"
+    url = "/instruction/"
+    weight = 1
+  [[menu.main]]
+    name = "в деталях"
+    url = "/reviews/"
+    weight = 2
+
+[params.social]
+  vk = "dcsdc"
+  youtube = "dcsd"
+  telegram = "kenguru42"

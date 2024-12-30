@@ -1,0 +1,6 @@
+/public/*
+!/public/.git
+/content/*
+!/content/.git
+/resources/*
+!/resources/.git
