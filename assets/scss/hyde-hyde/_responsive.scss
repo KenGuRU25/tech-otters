@@ -25,18 +25,21 @@
   .sidebar {
     margin: 0;
     padding: 0;
+    text-align: center;
   }
   .menu-content {
     padding: 0 0 0 0px;
     max-height: 0;
     overflow: hidden;
-    margin-top: 0; }
+    margin-top: 0;}
+
   .collapsible-menu {
     padding: 0px 0px;
   }
   .collapsible-menu ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
   }
   .collapsible-menu li {
     display: block;
@@ -45,11 +48,11 @@
     text-decoration: none;
     cursor: pointer; }
   .collapsible-menu label {
-    background: url(/img/menu-open.svg) no-repeat left center;
+    background: url(/img/menu-open-dark.svg) no-repeat left center;
     background-position: 1.5rem;
     display: block;
     cursor: pointer;
-    color: #fff;
+    color: #000000;
     padding: 10px 0 10px 0px; }
 
   input#menuToggle {
@@ -60,9 +63,9 @@
   }
 
   input#menuToggle:checked + label {
-    background-image: url(/img/menu-close.svg);
+    background-image: url(/img/menu-close-dark.svg);
     background-position: 1.5rem;
-    color: #fff;
+    color: #000000;
   }
 
   input#menuToggle:checked ~ .menu-content {
@@ -70,6 +73,7 @@
   }
   .social {
     padding: 1em 0 1em 0;
+    text-align: center;
   }
 }
 

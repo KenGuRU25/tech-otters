@@ -1,11 +1,10 @@
 .sidebar {
   background-color: $sidebar-color;
-  color: rgb(255, 255, 255);
-  color: rgba(255, 255, 255, 0.5);
+  color: $gray-9;
   padding: 2rem 1rem;
-  text-align: center;
+  text-align: left;
   a {
-    color: $gray-1;
+    color: $gray-9;
     border: none;
     &:hover {
       color: $link-color;
@@ -15,7 +14,7 @@
     }
   }
   .sidebar-about {
-    text-align: center;
+    text-align: left;
   }
   .author-image {
     display: block;
@@ -24,7 +23,7 @@
 }
 
 .sidebar-nav {
-  text-align: center;
+  text-align: left;
   list-style: none;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -52,7 +51,7 @@
 }
 
 .social {
-  text-align: center;
+  text-align: left;
   a {
     padding: 0 4px;
     @include link-no-decoration();
@@ -75,7 +74,7 @@
 %small-center-text {
   font-size: $font-scale-dot7;
   line-height: 1.1rem;
-  text-align: center;
+  text-align: left;
 }
 
 .copyright {

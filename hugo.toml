@@ -4,6 +4,7 @@ theme = "hyde-hyde"
 title = 'techpedia'
 
 [params]
+  postNavigation = true
   description = "Техническая энциклопедия"
   dateformat = "02.01.2006"
   copyright = "Техпедия. Киров"
