@@ -22,5 +22,4 @@
 
 {{/* .Params is the current page config. .Site.Params is globall config in hugo.toml */}}
 {{ if or .Site.Params.math .Params.math }}{{ partial "mathjax_support.html" . }}{{ end }}
-
 {{ partial "header-extra.html" . }}

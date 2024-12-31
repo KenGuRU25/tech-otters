@@ -1,19 +1,19 @@
-baseURL = ""
-languageCode = "en-us"
-defaultContentLanguage = "en"
+baseURL = "localhost"
+defaultContentLanguage = "ru"
+languageCode = "ru-ru"
 title = "TECHPEDIA"
 theme = "anubis2"
 
-[pagination]
-pagerSize = 5
-
-
-[params.author]
-name = "Junyi"
-email  = "me@junyi.dev"
-location = "e"
+[languages]
+  [languages.ru]
+    languageName = "Русский"
+    weight = 1
+  [languages.en]
+    languageName = "English"
+    weight = 2
 
 [params]
+mainSections = ["instruction", "reviews"]
 description = "Anubis2 is another simple minimalist theme for Hugo blog engine."
 dateFormat = "02.01.2006"
 paginationSinglePost = true
@@ -61,69 +61,32 @@ identifier = "archive"
 url = "/posts/"
 weight = 4
 
-[languages]
-[languages.en]
-languageName = "English"
-
-[languages.ru]
-languageName = "Polski"
-
-[[languages.pl.menu.main]]
+[[languages.ru.menu.main]]
 identifier = "home"
-name = "Strona Główna"
+name = "Главная"
 url = "/"
 weight = 1
 
-[[languages.pl.menu.main]]
+[[languages.ru.menu.main]]
 identifier = "about"
-name = "O Hugo"
-url = "/about/"
+name = "шаг за шагом"
+url = "/instruction/"
 weight = 2
 
-[[languages.pl.menu.main]]
+[[languages.ru.menu.main]]
 identifier = "tags"
-name = "Tagi"
-url = "/tags/"
+name = "в деталях"
+url = "/reviews/"
 weight = 3
 
-[[languages.pl.menu.main]]
+[[languages.ru.menu.main]]
 identifier = "archive"
-name = "Archiwum"
-url = "/posts/"
-weight = 4
-
-[languages.pl.params]
-languageCode = "pl-pl"
-
-[languages.zh]
-languageName = "Chinese"
-
-[[languages.zh.menu.main]]
-identifier = "home"
-name = "首页"
-url = "/"
-weight = 1
-
-[[languages.zh.menu.main]]
-identifier = "about"
-name = "关于"
+name = "о проекте"
 url = "/about/"
-weight = 2
-
-[[languages.zh.menu.main]]
-identifier = "tags"
-name = "标签"
-url = "/tags/"
-weight = 3
-
-[[languages.zh.menu.main]]
-identifier = "archive"
-name = "归档"
-url = "/posts/"
 weight = 4
 
-[languages.zh.params]
-languageCode = "zh-cn"
+[languages.ru.params]
+languageCode = "ru-ru"
 
 [taxonomies]
 category = "categories"
@@ -150,7 +113,3 @@ id = "d01ce82c-c8f4-4714-ba37-ba4899f2a885"                                     
 datacache = false
 url = "https://umami.xtra.science/script.js"
 shareUrl = "https://umami.xtra.science/share/Fy0goUn0b9rrxxGe/hugo-theme-anubis2.netlify.app"
-
-[params.GoogleAnalytics]
-enabled = true
-gtag = "G-32F16X8HLF"
