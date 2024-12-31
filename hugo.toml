@@ -3,7 +3,6 @@ languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "TECHPEDIA"
 theme = "anubis2"
-disqusShortname = ""
 
 [pagination]
 pagerSize = 5
