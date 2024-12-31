@@ -1,25 +1,157 @@
-baseURL = 'https://example.org/'
-languageCode = 'ru-RU'
-theme = "hyde-hyde"
-title = 'techpedia'
+baseURL = "/"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "TECHPEDIA"
+theme = "anubis2"
+disqusShortname = ""
+
+[pagination]
+pagerSize = 5
+
+
+[params.author]
+name = "Junyi"
+email  = "me@junyi.dev"
+location = "e"
 
 [params]
-  postNavigation = true
-  description = "Техническая энциклопедия"
-  dateformat = "02.01.2006"
-  copyright = "Техпедия. Киров"
+description = "Anubis2 is another simple minimalist theme for Hugo blog engine."
+dateFormat = "02.01.2006"
+paginationSinglePost = true
 
-[menu]
-  [[menu.main]]
-    name = "шаг за шагом"
-    url = "/instruction/"
-    weight = 1
-  [[menu.main]]
-    name = "в деталях"
-    url = "/reviews/"
-    weight = 2
+colorTheme = "auto"
+colorThemeSwitcher = true
 
-[params.social]
-  vk = "dcsdc"
-  youtube = "dcsd"
-  telegram = "kenguru42"
+readMore = false
+readNextPosts = 2
+copyCodeButton = true
+rssAsSocialIcon = true
+locale = "en-us"
+math = false # true: enable mathjax globally (default is false)
+toc = true
+
+social = [
+    { id = "instagram", url = "#" },
+    { id = "telegram", url = "#" },
+    { id = "youtube", url = "#" },
+    { id = "vk", url = "#" },
+    { id = "email", url = "example@example.com" }
+]
+
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 2
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 3
+
+[[menu.main]]
+name = "Archive"
+identifier = "archive"
+url = "/posts/"
+weight = 4
+
+[languages]
+[languages.en]
+languageName = "English"
+
+[languages.ru]
+languageName = "Polski"
+
+[[languages.pl.menu.main]]
+identifier = "home"
+name = "Strona Główna"
+url = "/"
+weight = 1
+
+[[languages.pl.menu.main]]
+identifier = "about"
+name = "O Hugo"
+url = "/about/"
+weight = 2
+
+[[languages.pl.menu.main]]
+identifier = "tags"
+name = "Tagi"
+url = "/tags/"
+weight = 3
+
+[[languages.pl.menu.main]]
+identifier = "archive"
+name = "Archiwum"
+url = "/posts/"
+weight = 4
+
+[languages.pl.params]
+languageCode = "pl-pl"
+
+[languages.zh]
+languageName = "Chinese"
+
+[[languages.zh.menu.main]]
+identifier = "home"
+name = "首页"
+url = "/"
+weight = 1
+
+[[languages.zh.menu.main]]
+identifier = "about"
+name = "关于"
+url = "/about/"
+weight = 2
+
+[[languages.zh.menu.main]]
+identifier = "tags"
+name = "标签"
+url = "/tags/"
+weight = 3
+
+[[languages.zh.menu.main]]
+identifier = "archive"
+name = "归档"
+url = "/posts/"
+weight = 4
+
+[languages.zh.params]
+languageCode = "zh-cn"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+author = "authors"
+
+[markup]
+defaultMarkdownHandler = 'goldmark'
+
+[markup.goldmark.renderer]
+unsafe = true # Enable unsafe mode to have a better experience
+
+[markup.highlight]
+anchorLineNos      = false
+codeFences         = true # tested with true and false. Both work.
+noClasses          = true # If you run with markup.highlight.noClasses=false in your site configuration, you need a style sheet.
+style              = 'catppuccin-frappe' # Find more style at here: https://swapoff.org/chroma/playground/
+tabWidth           = 4
+
+[params.UmamiAnalytics]
+enabled = true
+dnt = false
+id = "d01ce82c-c8f4-4714-ba37-ba4899f2a885"                                            # Website ID
+datacache = false
+url = "https://umami.xtra.science/script.js"
+shareUrl = "https://umami.xtra.science/share/Fy0goUn0b9rrxxGe/hugo-theme-anubis2.netlify.app"
+
+[params.GoogleAnalytics]
+enabled = true
+gtag = "G-32F16X8HLF"
