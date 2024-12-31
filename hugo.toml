@@ -109,7 +109,7 @@ tabWidth           = 4
 [params.UmamiAnalytics]
 enabled = true
 dnt = false
-id = "d01ce82c-c8f4-4714-ba37-ba4899f2a885"                                            # Website ID
+id = "227307c4-1b80-4b5f-a522-9194303e70e0"                                            # Website ID
 datacache = false
 url = "https://umami.xtra.science/script.js"
-shareUrl = "https://umami.xtra.science/share/Fy0goUn0b9rrxxGe/hugo-theme-anubis2.netlify.app"
+shareUrl = "https://cloud.umami.is/share/HIuYsvgZJK1WKIHS/tpedia.ru"
