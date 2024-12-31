@@ -25,7 +25,14 @@
 
     {{ if not .Site.Params.disableSummary }}
         <div class="content post-summary p-summary">
-            {{ .Summary | safeHTML }}
+            {{ with .Description }}
+                {{ . | safeHTML }}
+            {{ else }}
+                {{ $content := .Content | plainify | replaceRE `<[^>]+>` "" }}
+                {{ $words := split $content " " }}
+                {{ $summary := delimit (first 50 $words) " " }}
+                {{ printf "%s..." ($summary | truncate 200) | safeHTML }}
+            {{ end }}
         </div>
     {{ end }}
 
@@ -34,6 +41,8 @@
             <a class="u-url" href="{{ .RelPermalink }}">{{ i18n "readMore" }}</a>
         </div>
     {{ end }}
+
+
     
     {{ if .Store.Get "hasMermaid" }}
         {{ partial "mermaid_support.html" . }}
