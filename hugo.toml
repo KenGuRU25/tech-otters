@@ -21,7 +21,7 @@ customCSS = ["css/custom1.css"]
 colorTheme = "auto"
 colorThemeSwitcher = true
 
-readMore = false
+readMore = true
 readNextPosts = 2
 copyCodeButton = true
 rssAsSocialIcon = true
