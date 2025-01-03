@@ -3,7 +3,7 @@
 {{ if and (ne site.Params.colortheme "auto") (eq site.Params.colorthemeswitcher false) }}
     {{ $dataTheme := site.Params.colortheme }}
 {{ end }}
-<html lang="{{ .Site.Params.locale | default .Site.LanguageCode }}" data-theme="{{ $dataTheme }}">
+<html lang="{{ .Language.Lang }}">
 <head>
     {{ block "head" . }}
         {{ partial "head.html" . }}

@@ -37,7 +37,9 @@
             {{ end }}
         </div>
         <div>
-            г.Киров<br>
+            {{ if .Site.Params.version }}
+            Версия: <a href="https://github.com/{{ .Site.Params.githubUsername }}/{{ .Site.Params.githubRepoName }}/releases/tag/v{{ .Site.Params.version }}" target="_blank">{{ .Site.Params.version }}</a>
+            {{ end }}
             {{ partial "footer-extra.html" . }}
         </div>
     </div>

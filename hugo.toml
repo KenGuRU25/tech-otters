@@ -1,6 +1,6 @@
 baseURL = "https://tpedia.ru/"
 defaultContentLanguage = "ru"
-languageCode = "ru-ru"
+languageCode = "ru-RU"
 title = "techpedia"
 theme = "anubis2"
 
@@ -14,13 +14,15 @@ theme = "anubis2"
 
 [params]
 mainSections = ["instructions", "reviews"]
-description = "Anubis2 is another simple minimalist theme for Hugo blog engine."
+description = "Профессиональные обзоры устройств и подробные инструкции для устранения их дефектов."
 dateFormat = "02.01.2006"
 paginationSinglePost = true
 customCSS = ["css/custom1.css"]
 colorTheme = "auto"
 colorThemeSwitcher = true
-
+version = "0.2.0-alpha"
+githubUsername = "KenGuRU25"
+githubRepoName = "techpedia"
 readMore = true
 readNextPosts = 2
 copyCodeButton = true
@@ -38,21 +40,21 @@ social = [
 ]
 
 [[menu.main]]
-identifier = "home"
-name = "Home"
-url = "/"
-weight = 1
-
-[[menu.main]]
 identifier = "about"
 name = "About"
 url = "/about/"
-weight = 2
+weight = 1
 
 [[menu.main]]
 identifier = "tags"
 name = "Tags"
 url = "/tags/"
+weight = 2
+
+[[menu.main]]
+name = "Archive"
+identifier = "archive"
+url = "/posts/"
 weight = 3
 
 [[menu.main]]
@@ -62,22 +64,22 @@ url = "/posts/"
 weight = 4
 
 [[languages.ru.menu.main]]
-identifier = "home"
-name = "Главная"
-url = "/"
-weight = 1
-
-[[languages.ru.menu.main]]
 identifier = "instruction"
 name = "шаг за шагом"
 url = "/instructions/"
+weight = 1
+
+[[languages.ru.menu.main]]
+identifier = "reviews"
+name = "в деталях"
+url = "/reviews/"
 weight = 2
 
 [[languages.ru.menu.main]]
 identifier = "reviews"
 name = "в деталях"
 url = "/reviews/"
-weight = 3
+weight = 2
 
 [[languages.ru.menu.main]]
 identifier = "about"
@@ -86,7 +88,7 @@ url = "/about/"
 weight = 4
 
 [languages.ru.params]
-languageCode = "ru-ru"
+languageCode = "ru-RU"
 
 [taxonomies]
 category = "categories"
