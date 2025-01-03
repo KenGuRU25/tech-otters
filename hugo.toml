@@ -1,4 +1,4 @@
-baseURL = "https://techpedia.ru/"
+baseURL = "https://tpedia.ru/"
 defaultContentLanguage = "ru"
 languageCode = "ru-ru"
 title = "techpedia"
@@ -13,7 +13,7 @@ theme = "anubis2"
     weight = 2
 
 [params]
-mainSections = ["instruction", "reviews"]
+mainSections = ["instructions", "reviews"]
 description = "Anubis2 is another simple minimalist theme for Hugo blog engine."
 dateFormat = "02.01.2006"
 paginationSinglePost = true
@@ -70,7 +70,7 @@ weight = 1
 [[languages.ru.menu.main]]
 identifier = "instruction"
 name = "шаг за шагом"
-url = "/instruction/"
+url = "/instructions/"
 weight = 2
 
 [[languages.ru.menu.main]]

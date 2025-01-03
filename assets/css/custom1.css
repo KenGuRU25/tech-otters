@@ -10,13 +10,114 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Gilroy Light', sans-serif;
 }
 
-.toc    {
-    cursor: pointer;
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    opacity: 0.8;
 }
-.toc.expanded   {
+
+.toc {
     cursor: pointer;
 }
 
-table   {
+.toc.expanded {
+    cursor: pointer;
+}
+
+table {
     overflow: hidden;
+}
+
+/* Стили для карточек постов */
+.post-list {
+    margin-bottom: 2rem;
+    background: var(--card-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 0;
+}
+
+.post-image-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.post-image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.post-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 1.5rem;
+}
+
+.post-title {
+    margin: 0 0 0.5rem 0;
+}
+
+.post-title a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+.post-title a:hover,
+.post-title a:focus,
+.post-title a:active {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.post-meta {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: var(--post-info-color);
+    font-size: 0.9rem;
+}
+
+.post-date {
+    color: var(--post-info-color);
+}
+
+.post-tag {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.post-tag:hover,
+.post-tag:focus,
+.post-tag:active {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.post-summary {
+    color: var(--font-color);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.lazyload {
+    opacity: 0;
+}
+
+.lazyloaded {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
 }
