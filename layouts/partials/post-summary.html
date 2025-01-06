@@ -4,7 +4,8 @@
         {{ if .Params.image }}
             {{ $imagePath := path.Join .File.Dir .Params.image }}
             {{ if fileExists (path.Join "content" $imagePath) }}
-                {{ $image = $imagePath }}
+            {{ $imagePath := path.Join .RelPermalink .Params.image }}
+            {{ $image = $imagePath }}
             {{ end }}
         {{ end }}
         {{ if $image }}
@@ -47,4 +48,3 @@
         {{ end }}
     </div>
 </article>
-
