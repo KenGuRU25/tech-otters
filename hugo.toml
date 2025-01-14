@@ -1,7 +1,7 @@
 baseURL = "https://tpedia.ru/"
 defaultContentLanguage = "ru"
 languageCode = "ru-RU"
-title = "tpedia"
+title = "tech otters"
 theme = "anubis2"
 
 [permalinks]
@@ -31,7 +31,6 @@ githubRepoName = "tech-otters"
 readMore = true
 readNextPosts = 2
 copyCodeButton = true
-rssAsSocialIcon = true
 locale = "ru-RU"
 math = false
 toc = true
