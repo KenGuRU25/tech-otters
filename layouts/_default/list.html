@@ -4,7 +4,15 @@
     </div>
 
     <div class="articles h-feed">
-        <h1 class="post-title">{{ i18n .Title | markdownify }}</h1>
+        <h1 class="post-title">
+            {{ if eq .Kind "term" }}
+                {{ i18n (lower .Data.Singular) }}: {{ i18n (lower .Title) | default .Title }}
+            {{ else if eq .Kind "taxonomy" }}
+                {{ i18n (lower .Data.Plural) }}
+            {{ else }}
+                {{ i18n (lower .Title) | default .Title | markdownify }}
+            {{ end }}
+        </h1>
         {{ $showFullContent := in .Site.Params.sectionsWithFullContentOnListPage .Section }}
         {{ $pages := where .Pages "Params.hidden" "!=" true }}
 

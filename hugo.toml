@@ -1,5 +1,6 @@
 baseURL = "https://tpedia.ru/"
 defaultContentLanguage = "ru"
+defaultContentLanguageInSubdir = true
 languageCode = "ru-RU"
 title = "tech otters"
 theme = "anubis2"
@@ -7,17 +8,24 @@ theme = "anubis2"
 [permalinks]
 instructions = "/categories/instructions/:slug/"
 reviews = "/categories/reviews/:slug/"
+bitz = "/categories/bitz/:slug/"
 
 [languages]
   [languages.ru]
     languageName = "Русский"
     weight = 1
+    contentDir = "content/ru"
+    [languages.ru.taxonomies]
+    category = "categories"
+    tag = "tags"
+    author = "authors"
+
   [languages.en]
     languageName = "English"
     weight = 2
+    contentDir = "content/en"
 
 [params]
-defaultContentLanguageInSubdir = true
 mainSections = ["instructions", "reviews"]
 description = "Профессиональные обзоры устройств и подробные инструкции для устранения их дефектов."
 dateFormat = "02.01.2006"
@@ -36,11 +44,7 @@ math = false
 toc = true
 disableRobotsTXT = true
 social = [
-    { id = "instagram", url = "#" },
-    { id = "telegram", url = "#" },
-    { id = "youtube", url = "#" },
-    { id = "vk", url = "#" },
-    { id = "email", url = "mail@techpedia.ru" }
+    { id = "telegram", url = "https://t.me/techotters" },
 ]
 
 [[menu.main]]
@@ -50,22 +54,34 @@ url = "/categories/"
 weight = 1
 
 [[menu.main]]
+identifier = "contacts"
+name = "contacts"
+url = "/contacts/"
+weight = 2
+
+[[menu.main]]
 identifier = "about"
 name = "About"
 url = "/about/"
-weight = 2
+weight = 3
 
 [[languages.ru.menu.main]]
 identifier = "categories"
-name = "Статьи"
+name = "Категории"
 url = "/categories/"
 weight = 1
+
+[[languages.ru.menu.main]]
+identifier = "contacts"
+name = "Участники"
+url = "/contacts/"
+weight = 2
 
 [[languages.ru.menu.main]]
 identifier = "about"
 name = "О проекте"
 url = "/about/"
-weight = 2
+weight = 3
 
 [languages.ru.params]
 languageCode = "ru-RU"

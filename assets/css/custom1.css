@@ -10,11 +10,9 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Gilroy Light', sans-serif;
 }
-
-a {
-    text-decoration: none;
+a   {   
+    border-bottom: none;
 }
-
 a:hover,
 a:focus,
 a:active {
