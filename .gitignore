@@ -4,3 +4,5 @@
 !/content/.git
 /resources/*
 !/resources/.git
+/static/*
+!/static/.git

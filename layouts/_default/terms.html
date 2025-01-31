@@ -3,16 +3,19 @@
         {{ .Content }}
     </div>
 
-    <h1>{{ i18n (lower .Data.Plural) | default .Title | markdownify }}</h1>
-    <ul class="terms">
+    <h1 class="terms-title">{{ i18n (lower .Data.Plural) | default .Title | markdownify }}</h1>
+    <div class="terms-grid">
         {{ range .Data.Terms }}
             {{ $postsNum := len (where .Pages "Params.hidden" "!=" true) }}
             {{ if gt $postsNum 0 }}
-                <li>
-                    <a href="{{ .Page.RelPermalink }}">{{ i18n (lower .Page.Title) | default .Page.Title | markdownify }}</a>
-                    ({{ $postsNum }})
-                </li>
+                <div class="term-card">
+                    <a href="{{ .Page.RelPermalink }}" class="term-link">
+                        <h2 class="term-title">{{ i18n (lower .Page.Title) | default .Page.Title | markdownify }}</h2>
+                        <span class="term-count">({{ $postsNum }})</span>
+                    </a>
+                </div>
             {{ end}}
         {{ end }}
-    </ul>
+    </div>
 {{ end }}
+
