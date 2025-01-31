@@ -8,7 +8,7 @@ theme = "anubis2"
 [permalinks]
 instructions = "/categories/instructions/:slug/"
 reviews = "/categories/reviews/:slug/"
-bitz = "/categories/bitz/:slug/"
+faq = "/categories/faq/:slug/"
 
 [languages]
   [languages.ru]
