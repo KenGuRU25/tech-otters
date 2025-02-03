@@ -67,7 +67,7 @@ weight = 3
 
 [[languages.ru.menu.main]]
 identifier = "categories"
-name = "Категории"
+name = "Публикации"
 url = "/categories/"
 weight = 1
 

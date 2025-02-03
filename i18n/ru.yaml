@@ -57,3 +57,10 @@ toOldPost:
 
 videoIsNotSupported:
   other: "Ваш браузер не поддерживает видео"
+
+category_instructions: "Инструкции"
+category_reviews: "Обзоры"
+category_faq: "ЧаВо"
+category_description_instructions: "Подробные инструкции по использованию различных устройств и технологий."
+category_description_reviews: "Профессиональные обзоры новейших гаджетов и технологических продуктов."
+category_description_faq: "Ответы на часто задаваемые вопросы о технологиях и устройствах."

@@ -2,19 +2,23 @@
     <div class="index-content">
         {{ .Content }}
     </div>
-
-    <h1 class="terms-title">{{ i18n (lower .Data.Plural) | default .Title | markdownify }}</h1>
     <div class="terms-grid">
-        {{ range .Data.Terms }}
+        {{ range .Data.Terms.ByCount }}
             {{ $postsNum := len (where .Pages "Params.hidden" "!=" true) }}
             {{ if gt $postsNum 0 }}
                 <div class="term-card">
-                    <a href="{{ .Page.RelPermalink }}" class="term-link">
-                        <h2 class="term-title">{{ i18n (lower .Page.Title) | default .Page.Title | markdownify }}</h2>
-                        <span class="term-count">({{ $postsNum }})</span>
-                    </a>
+                    <div class="term-content">
+                        <h2 class="term-title">
+                            <a href="{{ .Page.RelPermalink }}" class="term-link">
+                                {{ i18n (printf "category_%s" (lower .Page.Title)) | default (.Page.Title | humanize) | markdownify }}
+                            </a>
+                        </h2>
+                        {{ with i18n (printf "category_description_%s" (lower .Page.Title)) }}
+                            <p class="term-description">{{ . }}</p>
+                        {{ end }}
+                    </div>
                 </div>
-            {{ end}}
+            {{ end }}
         {{ end }}
     </div>
 {{ end }}
