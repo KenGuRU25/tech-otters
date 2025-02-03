@@ -1,9 +1,3 @@
-[submodule "themes/hyde-hyde"]
-	path = themes/hyde-hyde
-	url = https://github.com/htr3n/hyde-hyde.git
-[submodule "themes/hello-friend-ng"]
-	path = themes/hello-friend-ng
-	url = https://github.com/rhazdon/hugo-theme-hello-friend-ng.git
 [submodule "themes/anubis2"]
 	path = themes/anubis2
 	url = https://github.com/Junyi-99/hugo-theme-anubis2.git
