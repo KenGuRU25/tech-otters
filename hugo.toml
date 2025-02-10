@@ -2,28 +2,8 @@ baseURL = "https://tpedia.ru/"
 defaultContentLanguage = "ru"
 defaultContentLanguageInSubdir = true
 languageCode = "ru-RU"
-title = "tech otters"
+title = "Tech Otters"
 theme = "anubis2"
-
-[permalinks]
-instructions = "/categories/instructions/:slug/"
-reviews = "/categories/reviews/:slug/"
-faq = "/categories/faq/:slug/"
-
-[languages]
-  [languages.ru]
-    languageName = "Русский"
-    weight = 1
-    contentDir = "content/ru"
-    [languages.ru.taxonomies]
-    category = "categories"
-    tag = "tags"
-    author = "authors"
-
-  [languages.en]
-    languageName = "English"
-    weight = 2
-    contentDir = "content/en"
 
 [params]
 mainSections = ["instructions", "reviews", "faq"]
@@ -47,19 +27,34 @@ social = [
     { id = "telegram", url = "https://t.me/techotters" },
 ]
 
-[[menu.main]]
+[permalinks]
+instructions = "/categories/instructions/:slug/"
+reviews = "/categories/reviews/:slug/"
+faq = "/categories/faq/:slug/"
+
+[languages]
+  [languages.ru]
+    languageName = "Русский"
+    weight = 1
+    contentDir = "content/ru"
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    contentDir = "content/en"
+
+[[languages.en.menu.main]]
 identifier = "categories"
-name = "Post"
+name = "Publications"
 url = "/categories/"
 weight = 1
 
-[[menu.main]]
+[[languages.en.menu.main]]
 identifier = "contacts"
-name = "contacts"
+name = "Members"
 url = "/contacts/"
 weight = 2
 
-[[menu.main]]
+[[languages.en.menu.main]]
 identifier = "about"
 name = "About"
 url = "/about/"

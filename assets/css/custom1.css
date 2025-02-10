@@ -154,8 +154,14 @@ a:active {
     color: var(--link-color);
     text-decoration: none;
   }
-  
+
+  .term-description {
+    font-size: 0.95rem;
+    color: var(--font-color);
+    margin: 0.5rem 0 0;
+  }
+
   .term-count {
     font-size: 0.9rem;
     color: var(--post-info-color);
-  }  
+  }
