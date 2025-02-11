@@ -6,7 +6,8 @@ title = "Tech Otters"
 theme = "anubis2"
 
 [params]
-mainSections = ["instructions", "reviews", "faq"]
+sectionPagesMenu = "main"
+mainSections = ["instructions", "reviews"]
 description = "Профессиональные обзоры устройств и подробные инструкции для устранения их дефектов."
 dateFormat = "02.01.2006"
 paginationSinglePost = true
@@ -31,6 +32,7 @@ social = [
 instructions = "/categories/instructions/:slug/"
 reviews = "/categories/reviews/:slug/"
 faq = "/categories/faq/:slug/"
+authors = "/authors/:slug/"
 
 [languages]
   [languages.ru]
@@ -51,7 +53,7 @@ weight = 1
 [[languages.en.menu.main]]
 identifier = "contacts"
 name = "Members"
-url = "/contacts/"
+url = "/authors/"
 weight = 2
 
 [[languages.en.menu.main]]
@@ -69,7 +71,7 @@ weight = 1
 [[languages.ru.menu.main]]
 identifier = "contacts"
 name = "Участники"
-url = "/contacts/"
+url = "/authors/"
 weight = 2
 
 [[languages.ru.menu.main]]
@@ -84,7 +86,6 @@ languageCode = "ru-RU"
 [taxonomies]
 category = "categories"
 tag = "tags"
-author = "authors"
 
 [markup]
 defaultMarkdownHandler = 'goldmark'

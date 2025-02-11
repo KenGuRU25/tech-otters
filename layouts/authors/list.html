@@ -1,0 +1,18 @@
+{{ define "main" }}
+<ul class="terms">
+    {{ range .Pages }}
+        <li class="post-card">
+            <a href="{{ .RelPermalink }}">
+                <h2 class="post-title">{{ .Title }}</h2>
+                {{ with .Params.bio }}
+                    <p class="post-summary">{{ . }}</p>
+                {{ end }}
+            </a>
+        </li>
+    {{ else }}
+        <p>Нет авторов!</p>
+    {{ end }}
+</ul>
+
+<p class="post-info">Всего авторов: {{ len .Pages }}</p>
+{{ end }}

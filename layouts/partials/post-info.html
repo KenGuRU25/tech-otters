@@ -40,12 +40,18 @@
             </ul>
         {{ end }}
         {{ if .Params.authors }}
-            <ul class="post-authors">
-                {{ range $author_name := .Params.authors }}
-                    {{ $author := ($.Site.GetPage (printf "/authors/%s" $author_name | urlize )) }}
-                    <li><a href="{{ $author.RelPermalink }}">@{{ $author_name }}</a></li>
+        <ul class="post-authors">
+            {{ range .Params.authors }}
+                {{ $authorPage := site.GetPage (printf "authors/%s" .) }}
+                {{ if $authorPage }}
+                    <li>
+                        <a href="{{ $authorPage.RelPermalink }}">{{ $authorPage.Title }}</a>
+                    </li>
+                {{ else }}
+                    <li>{{ . }}</li>  {{/* Если автор не найден, просто показываем имя */}}
                 {{ end }}
-            </ul>
-        {{ end }}
+            {{ end }}
+        </ul>
+        {{ end }}       
     </div>
 </div>
