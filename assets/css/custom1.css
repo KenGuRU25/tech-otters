@@ -1,4 +1,8 @@
 /* Базовые стили */
+html {
+    --post-info-color: #545454 !important;
+}
+
 @font-face {
     font-family: 'Gilroy Light';
     src: url('/fonts/Gilroy-Light.otf') format('opentype');
