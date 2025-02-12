@@ -1,0 +1,4 @@
+---
+title: "Авторы"
+type: "authors"
+---
