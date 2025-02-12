@@ -4,15 +4,16 @@ html {
 }
 
 @font-face {
-    font-family: 'Gilroy Light';
-    src: url('/fonts/Gilroy-Light.otf') format('opentype');
-    font-weight: normal;
+    font-family: 'Gilroy';
+    src: url('/fonts/subset-Gilroy-Light.woff2') format('woff2'),
+         url('/fonts/subset-Gilroy-Light.woff') format('woff');
+    font-weight: 300; /* Light */
     font-style: normal;
     font-display: swap;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Gilroy Light', Arial, Helvetica, sans-serif;
+    font-family: Gilroy, Arial, Helvetica, sans-serif;
 }
 a   {   
     border-bottom: none;
