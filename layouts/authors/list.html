@@ -1,7 +1,7 @@
 {{ define "main" }}
-<ul class="terms">
+<ul class="post-list h-feed post-card">
     {{ range .Pages }}
-        <li class="post-card">
+        <li class="post-content">
             <a href="{{ .RelPermalink }}">
                 <h2 class="post-title">{{ .Title }}</h2>
                 {{ with .Params.bio }}
