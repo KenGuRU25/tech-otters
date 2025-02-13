@@ -1,1 +1,9 @@
-<title>{{ if and (.Title) (not .IsHome) }}{{ .Title | markdownify }} - {{ end }}{{ .Site.Title | markdownify }}</title>
+<title>
+    {{ if .IsHome }}
+        Tech Otters – чиним, тестим, рассуждаем
+    {{ else if .Title }}
+        {{ .Title | markdownify }} | {{ .Site.Title | markdownify }}
+    {{ else }}
+        {{ .Site.Title | markdownify }}
+    {{ end }}
+</title>
