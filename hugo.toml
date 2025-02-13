@@ -8,7 +8,7 @@ theme = "anubis2"
 [params]
 sectionPagesMenu = "main"
 mainSections = ["instructions", "reviews"]
-description = "Профессиональные обзоры устройств и подробные инструкции для устранения их дефектов."
+description = "Мы тестируем, лечим и продлеваем жизнь гаджетам! Профессиональные обзоры, инструкции и хитрости ремонта – чтобы техника не страдала."
 dateFormat = "02.01.2006"
 paginationSinglePost = true
 customCSS = ["css/custom1.css"]
