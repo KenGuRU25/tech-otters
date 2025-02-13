@@ -1,16 +1,17 @@
 {{ define "main" }}
-<ul class="post-list h-feed post-card">
+<div class="terms-grid">
     {{ range .Pages }}
-        <li class="post-content">
-            <a href="{{ .RelPermalink }}">
-                <h2 class="post-title">{{ .Title }}</h2>
-                {{ with .Params.bio }}
-                    <p class="post-summary">{{ . }}</p>
-                {{ end }}
-            </a>
-        </li>
+        <div class="term-card">
+                <a href="{{ .RelPermalink }}" class="term-link">
+                    <h2 class="term-title">{{ .Title }}</h2>
+                    {{ with .Params.bio }}
+                        <p class="term-description">{{ . }}</p>
+                    {{ end }}
+                </a>
+            </li>
     {{ else }}
         <p>Нет авторов!</p>
     {{ end }}
-</ul>
+        </div>
+</div>
 {{ end }}
