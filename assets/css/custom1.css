@@ -94,16 +94,6 @@ a:active {
     margin: 0;
 }
 
-/* Стили для изображений */
-.lazyload {
-    opacity: 0;
-}
-
-.lazyloaded {
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
-}
-
 /* Стили футера */
 .common-footer {
     display: flex;
