@@ -103,7 +103,7 @@ tabWidth           = 4
 [params.UmamiAnalytics]
 enabled = true
 dnt = false
-id = "a9e02222-e74e-475d-9fac-01599029baef"                                            # Website ID
+id = "e406deb4-702a-43c9-8fb3-aae309ad18b5"                                            # Website ID
 datacache = false
 url = "https://cloud.umami.is/script.js"
-shareUrl = "https://cloud.umami.is/share/ljpurhir3DRoeMcd/tpedia.ru"
+shareUrl = "https://cloud.umami.is/share/kDZiId8LR7dr8qgc/techotters.org"
