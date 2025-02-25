@@ -1,0 +1,18 @@
+{{ if .IsPage }}
+<nav class="breadcrumbs" aria-label="breadcrumb">
+  <ol>
+    <li><a href="{{ .Site.Home.RelPermalink }}">{{ i18n "home" }}</a></li>
+    {{ if .Parent }}
+      {{ if .Parent.IsHome }}
+        <li aria-current="page">{{ .Title }}</li>
+      {{ else }}
+        {{ $section := .Parent }}
+        {{ if $section.IsSection }}
+          <li><a href="{{ $section.RelPermalink }}">{{ $section.Title }}</a></li>
+        {{ end }}
+        <li aria-current="page">{{ .Title }}</li>
+      {{ end }}
+    {{ end }}
+  </ol>
+</nav>
+{{ end }}
