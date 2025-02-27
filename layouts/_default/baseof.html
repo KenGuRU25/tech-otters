@@ -18,9 +18,6 @@
             {{ end }}
         </header>
         <main id="main" tabindex="-1">
-            {{ if .IsPage }}
-                {{ partial "breadcrumbs.html" . }}
-            {{ end }}
             {{ block "main" . }}{{ end }}
         </main>
         {{ block "footer" . }}
