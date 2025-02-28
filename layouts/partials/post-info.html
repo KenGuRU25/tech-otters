@@ -17,10 +17,8 @@
             {{- end }}
         </div>
     {{ end }}
-
     <a class="post-hidden-url u-url" href="{{ .RelPermalink }}">{{ .RelPermalink }}</a>
     <a href="{{ .Site.BaseURL }}" class="p-name p-author post-hidden-author h-card" rel="me">{{ .Params.author | default .Site.Params.author }}</a>
-
     <div class="post-taxonomies">
         {{ if .Params.authors }}
         <ul class="post-authors">
