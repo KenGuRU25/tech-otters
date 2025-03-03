@@ -2,7 +2,7 @@ baseURL = "https://techotters.org/"
 defaultContentLanguage = "ru"
 defaultContentLanguageInSubdir = true
 languageCode = "ru-RU"
-title = "tech.{otters}"
+title = "tech {otters}"
 theme = "anubis2"
 
 [params]
