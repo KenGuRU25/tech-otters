@@ -16,12 +16,11 @@
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 data-src="{{ $image }}"
                 alt="{{ .Title }}"
+                loading="lazy"
             >
         </div>
         {{ end }}
     </div>
-    
-
     <div class="post-content">
         <h1 class="p-name post-title{{ if .Params.favorite }} favorite{{end}}{{ if .Params.draft }} draft{{end}}">
             <a class="u-url" href="{{ .RelPermalink }}">{{ trim .Title " " | markdownify }}</a>
