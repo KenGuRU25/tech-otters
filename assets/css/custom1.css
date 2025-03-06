@@ -86,7 +86,7 @@ a:active {
 }
 
 .post-tag {
-    color: var(--link-color);
+    color: var(--post-info-color);
 }
 
 .post-summary {
