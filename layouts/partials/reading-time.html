@@ -1,0 +1,7 @@
+{{ $readTime := div (.WordCount) 200 }}
+{{ if lt $readTime 1 }}
+  {{ $readTime = 1 }}
+{{ end }}
+<span class="reading-time">
+  {{ $readTime }} {{ cond (eq $readTime 1) "минута" "минут" }} чтения
+</span>

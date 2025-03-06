@@ -4,7 +4,7 @@ title: Про камеры девятой серии Google Pixel
 date: 2024-10-03T15:00:51+03:00
 description: "Серия Google Pixel 9 демонстрирует интересную эволюцию в развитии камер смартфонов. Сейчас это лучшая селфи камера на рынке"
 author: "Стас Петухов"
-image: "index.webp"
+image: "https://img.techotters.org/sensor-pixel-9/index.webp"
 categories: ['reviews']
 keywords: ["Google"]
 tags: ["Google"]
@@ -28,7 +28,7 @@ Google внес традиционые изменения в камеры нед
 ## Обзор
 Из таблицы видно для основной камеры стал тот же сенсор, котороый испозуется в восьмой серии. Но так же появился новый сенсор, подробнее:
 
-![S5K3J1SX03](S5K3J1SX03.webp)
+![S5K3J1SX03](https://img.techotters.org/sensor-pixel-9/S5K3J1SX03.webp)
 Samsung S5K3J1SX03, Stacked BI, 10 MP, 1.22 μm. Она же у Pixel 8 Pro.
 
 Основная камера Pixel 9, Pro, Pro XL.

@@ -2,12 +2,13 @@
     <div class="post-image-wrapper">
         {{ $image := "" }}
         {{ if .Params.image }}
-            {{ $imagePath := path.Join .File.Dir .Params.image }}
-            {{ if fileExists (path.Join "content" $imagePath) }}
-            {{ $imagePath := path.Join .RelPermalink .Params.image }}
-            {{ $image = $imagePath }}
+            {{ if hasPrefix .Params.image "http" }}
+                {{ $image = .Params.image }}
+            {{ else }}
+                {{ $image = printf "https://img.techotters.org/%s" .Params.image }}
             {{ end }}
         {{ end }}
+        
         {{ if $image }}
         <div class="post-image-container">
             <img 
@@ -19,6 +20,7 @@
         </div>
         {{ end }}
     </div>
+    
 
     <div class="post-content">
         <h1 class="p-name post-title{{ if .Params.favorite }} favorite{{end}}{{ if .Params.draft }} draft{{end}}">
@@ -27,6 +29,13 @@
 
         <div class="post-meta">
             <time class="post-date">{{ .Date.Format "02.01.2006" }}</time>
+            {{ $readTime := div (.WordCount) 200 }}
+            {{ if lt $readTime 1 }}
+                {{ $readTime = 1 }}
+            {{ end }}
+            <span class="reading-time">
+                {{ $readTime }} {{ cond (eq $readTime 1) "мин" "мин" }}
+            </span>
             {{ with .Params.tags }}
                 {{ range . }}
                     <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="post-tag">#{{ . }}</a>
@@ -48,3 +57,4 @@
         {{ end }}
     </div>
 </article>
+
