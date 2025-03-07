@@ -1,0 +1,9 @@
+<img 
+  src="https://img.techotters.org/cdn-cgi/image/w=800,quality=80,format=webp/originals/{{ .Get "src" }}" 
+  srcset="
+    https://img.techotters.org/cdn-cgi/image/w=400,quality=80,format=webp/originals/{{ .Get "src" }} 400w, 
+    https://img.techotters.org/cdn-cgi/image/w=800,quality=80,format=webp/originals/{{ .Get "src" }} 800w, 
+    https://img.techotters.org/cdn-cgi/image/w=1200,quality=80,format=webp/originals/{{ .Get "src" }} 1200w" 
+  sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px"
+  alt="{{ .Get "alt" }}"
+  loading="lazy">
