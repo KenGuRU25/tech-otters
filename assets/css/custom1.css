@@ -26,7 +26,6 @@ a:hover,
 a:focus,
 a:active {
     text-decoration: none;
-    opacity: 0.8;
     border-bottom: none;
 }
 

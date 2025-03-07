@@ -17,7 +17,7 @@ Xbox Series S поступил в продажу в ноябре 2020 года. 
  Деградация термоинтерфейса снижает эффективность теплоотвода от кристалла процессора, что может приводить к перегреву и снижению производительности.
  Наш пациент 17 ноября 2021 года рождения это подтверждает своим поведением.
  
-![Винты Series S](https://img.techotters.org/series-s/000.webp)
+{{< img folder="series-s" src="000.webp" alt="Винты Series S" >}}
 
 ## Вам понадобится:
 •	**Отвертка Torx T8:** Для откручивания винтов консоли. Желательно - качественная, многие болты откручиваются с достаточно сильным усилием.  
@@ -34,194 +34,193 @@ Xbox Series S поступил в продажу в ноябре 2020 года. 
 ## Пролог
 Разборка Xbox Series S не представляет особой сложности, и с этой задачей может справиться любой человек. Конструкция консоли достаточно проста и интуитивно понятна.  
  
-![Винты Series S](https://img.techotters.org/cdn-cgi/image/w=800,quality=80,format=webp/series-s/00.png
-)
+{{< img folder="series-s" src="00.png" alt="Винты Series S" >}}
 
 Перед тем, как приступить к разборке, важно ознакомиться с типами винтов, используемых в конструкции Xbox Series S. Это винты типа Torx, которые отличаются от обычных крестообразных винтов формой шлица в виде шестиконечной звезды. Для разборки консоли вам понадобится отвертка Torx T8.  
 
 ## Первый шаг. Пломбы.
 Прежде чем приступить к разборке, обратите внимание на пломбы, расположенные на винтах корпуса консоли. Нарушение целостности пломб лишит вас права на гарантийный ремонт, но вы всего скорее это понимаете, иначе зачем мы тут сегодня собрались. Греем феном и аккуратно снимаем их с обеих сторон.
 
-![Пломбы Series S](https://img.techotters.org/series-s/01.png) 
+{{< img folder="series-s" src="01.png" alt="Пломбы Series S" >}}
 
 Вот наши первые болты которые нужно открутить
 
-![Пломбы Series S](https://img.techotters.org/series-s/02.png) 
+{{< img folder="series-s" src="02.png" alt="Пломбы Series S" >}}
 
 ## Второй шаг. Белые крышки.
 После того как они будут оба выкручены, нижняя стенка приставки легко сдвигается в сторону разъёмов и демонтируется.
 
-![корпус Series S](https://img.techotters.org/series-s/03.png)
+{{< img folder="series-s" src="03.png" alt="корпус Series S" >}}
 
 Затем идет снятие верхней крышки консоли, для этого нужно открутить семь болтов типоразмера  #02.
 
-![корпус Series S](https://img.techotters.org/series-s/04.png)  
+{{< img folder="series-s" src="04.png" alt="корпус Series S" >}}
 
 И одновременно с обеих сторон, совсем немного, отогнуть стенки верхней крышки.  
 
-![корпус Series S](https://img.techotters.org/series-s/06.png)
+{{< img folder="series-s" src="06.png" alt="корпус Series S" >}}
 
 Крышка отделится от тушки и получится следующая картина.
 
-![корпус Series S](https://img.techotters.org/series-s/07.JPG)
+{{< img folder="series-s" src="07.JPG" alt="корпус Series S" >}}
 
 ## Третий шаг. Платы разширений
 Переходим к разбору непосредственно уже внутренних частей консоли, поэтому включаем свою внимательность и аккуратность на максимум.
 Откручиваем винты #03, которые держат плату Bluetooth, и вынимаем ее из разъема.
 
-![плата Bluetooth Series S](https://img.techotters.org/series-s/08.JPG)
+{{< img folder="series-s" src="08.JPG" alt="плата Bluetooth Series S" >}}
 
 Откручиваем винт #03 платы кнопки и индикации, снимаем её.
 
-![плата кнопки Series S](https://img.techotters.org/series-s/09.JPG)
+{{< img folder="series-s" src="09.JPG" alt="плата кнопки Series S" >}}
 
 Ну и с последней платой Wi-Fi проводим аналогичную процедуру  
 
-![плата wi-fi Series S](https://img.techotters.org/series-s/10.JPG)
+{{< img folder="series-s" src="10.JPG" alt="плата wi-fi Series S" >}}
 
 ## Шаг четвертый. Металлическое шасси.
 Чтобы не было скучно, Microsoft сделала три пасхалки. Самый настойчивый найдет их в количестве трех штук.   
 
 Откручиваем семь винтов, которые держат блок питания  
 
-![Болты блока питания Series S](https://img.techotters.org/series-s/11.JPG)
+{{< img folder="series-s" src="11.JPG" alt="Болты блока питания Series S" >}}
 
 Переворачиваем нашу консоль и раскрываем металлический кейс.
 
-![Шасси Series S](https://img.techotters.org/series-s/12.JPG)
+{{< img folder="series-s" src="12.JPG" alt="Шасси Series S" >}}
 
 Извлекаем блок питания и откладываем в сторону. Шлем Halo — первая пасхалка.  
 
-![Блок питания Series S](https://img.techotters.org/series-s/13.JPG)
+{{< img folder="series-s" src="13.JPG" alt="Блок питания Series S" >}}
 
 ## Шаг пятый. Кулер.
 Откручиваем винты вентилятора.
 
-![Xbox Series S](https://img.techotters.org/series-s/14.JPG)
+{{< img folder="series-s" src="14.JPG" alt="Xbox Series S" >}}
 
 Обратим внимание на его коннектор, стрелками обозначены защелки.
 
-![Коннектор куллера Series S](https://img.techotters.org/series-s/15.JPG)
+{{< img folder="series-s" src="15.JPG" alt="Коннектор куллера Series S" >}}
 
 Аккуратными расшатывающими движениями отключаем его от платы
 
-![Коннектор куллера Series S](https://img.techotters.org/series-s/16.JPG)
+{{< img folder="series-s" src="16.JPG" alt="Коннектор куллера Series S" >}}
 
 Оцениваем количество пыли  
 
-![Чистка Series S](https://img.techotters.org/series-s/17.JPG)
+{{< img folder="series-s" src="17.JPG" alt="Чистка Series S" >}}
 
 ## Шестой шаг. Плата.
 Переворачиваем консоль и кладём на край стола, чтобы было удобно открутить болты радиатора.  
 
-![Чистка Series S](https://img.techotters.org/series-s/18.JPG)
+{{< img folder="series-s" src="18.JPG" alt="Чистка Series S" >}}
 
 Типоразмер #03, раскручиваем по диагонали 
 
-![Чистка Series S](https://img.techotters.org/series-s/19.JPG)
+{{< img folder="series-s" src="19.JPG" alt="Чистка Series S" >}}
 
 Извлекаем "ребро" у разъема USB. Для этого нужно что-нибудь вставить в щель, как показано на фото.  Если такого инструмента у вас нет, можно использовать пластиковую карту.
 
-![Чистка Series S](https://img.techotters.org/series-s/20.JPG)
+{{< img folder="series-s" src="20.JPG" alt="Чистка Series S" >}}
 
 Можно медленно извлекать плату из шасси, приподняв ее за разъем USB или коннектор блока питания.
 
-![Плата Series S](https://img.techotters.org/series-s/21.JPG)
+{{< img folder="series-s" src="21.JPG" alt="Плата Series S" >}}
 
 Координируя движения, не даем плате зацепиться за этот выступ.
 
-![Плата Series S](https://img.techotters.org/series-s/22.JPG)
+{{< img folder="series-s" src="22.JPG" alt="Плата Series S" >}}
 
 Плата извлечена. Кладём её радиатором на стол.
 
-![Плата Series S](https://img.techotters.org/series-s/24.JPG)
+{{< img folder="series-s" src="24.JPG" alt="Плата Series S" >}}
 
 ## Седьмой шаг. Прижимная пластина
 Нужно аккуратно отогнуть скобы у прижимной пластины радиатора.
 
-![Плата Series S](https://img.techotters.org/series-s/25.JPG)
+{{< img folder="series-s" src="25.JPG" alt="Плата Series S" >}}
 
 Для этого я использую отвертку Wiha PH00, у нее сплав тверже, чем у скобы, поэтому я чувствую, что разгибается она, а не гнется отвертка. Вставляю, как показано на рисунке, не более 5 мм, чтобы не задеть текстолит
 
-![Плата Series S](https://img.techotters.org/series-s/26.JPG)
+{{< img folder="series-s" src="26.JPG" alt="Плата Series S" >}}
 
 и очень аккуратным движением, немного разгибая её, освободите ее из паза. Будьте предельно внимательны.
 
-![Плата Series S](https://img.techotters.org/series-s/27.JPG)
+{{< img folder="series-s" src="27.JPG" alt="Плата Series S" >}}
 
 Если будете аккуратны, не останется никаких следов.
 
-![Плата Series S](https://img.techotters.org/series-s/28.JPG)
+{{< img folder="series-s" src="28.JPG" alt="Плата Series S" >}}
 
 Ну все, перед нами "голая" плата и вторая пасхалка — снова шлем Halo.
 
-![Плата Series S](https://img.techotters.org/series-s/29.JPG)
+{{< img folder="series-s" src="29.JPG" alt="Плата Series S" >}}
 
 ## Восьмой шаг. Термопаста.
 Начинаем с чипа, на моем пациенте термопаста абсолютно сухая. Если у вас аналогичная ситуация, не спешите использовать спирт. Он моментально растворяет термопасту, из-за чего вы создадите себе огромную работу в дальнейшем, вычищая ее между SMD компонентами чипа.
 
-![Плата Series S](https://img.techotters.org/series-s/30.JPG)
+{{< img folder="series-s" src="30.JPG" alt="Плата Series S" >}}
 
 Я использую механический метод для удаления большей части засохшей термопасты. Для этого у меня есть палочки от суши, они, в отличие от зубочисток, из более мягкой древесины, и ими гораздо сложнее повредить кристалл или конденсаторные сборки. 
 
 Но все равно риск есть, поэтому к своей аккуратности и внимательности прибавьте еще 50%. Затем добавляем к этому ватные палочки и спирт.
 
-![Плата Series S](https://img.techotters.org/series-s/31.JPG)
+{{< img folder="series-s" src="31.JPG" alt="Плата Series S" >}}
 
 Желаю вам, чтобы у вас получился такой же результат.
 
-![Плата Series S](https://img.techotters.org/series-s/32.JPG)
+{{< img folder="series-s" src="32.JPG" alt="Плата Series S" >}}
 
 Пока плату в сторону, берем в руки радиатор. Тут процедура такая же, убираем старую термопасту.
 
-![Плата Series S](https://img.techotters.org/series-s/33.JPG)
+{{< img folder="series-s" src="33.JPG" alt="Плата Series S" >}}
 
 У меня для кучи есть еще полироль для металла. Она очень хорошо убирает оксид меди/алюминия.
 
-![Плата Series S](https://img.techotters.org/series-s/34.JPG)
+{{< img folder="series-s" src="34.JPG" alt="Плата Series S" >}}
 
 Это я просто хвастаюсь, вам не обязательно полировать медное основание у радиатора.
 
-![Плата Series S](https://img.techotters.org/series-s/35.JPG)
+{{< img folder="series-s" src="35.JPG" alt="Плата Series S" >}}
 
 ## Девятый шаг. "Жвачка".
 Теперь включаем пылесос на выдув и берем в руки кисточку и щетку. Наводим чистоту на плате и чистим радиатор. После очистки во избежание попадания пыли на кристалл, наносим сразу термопасту. Насчет термо "жвачки", ее можно превратить снова в мягкую, капнув на нее каплю спирта и размяв пальцами, как пластилин. Из своего эксперимента я вам скажу: свойств она своих не теряет.
 
-![Плата Series S](https://img.techotters.org/series-s/36.JPG)
+{{< img folder="series-s" src="36.JPG" alt="Плата Series S" >}}
 
 Ставим радиатор на место
 
-![Плата Series S](https://img.techotters.org/series-s/37.JPG)
+{{< img folder="series-s" src="37.JPG" alt="Плата Series S" >}}
 
 Переворачиваем плату с радиатором и защелкиваем пластину. Откладываем в сторону.
 
-![Плата Series S](https://img.techotters.org/series-s/38.JPG)
+{{< img folder="series-s" src="38.JPG" alt="Плата Series S" >}}
 
 ## Десятый шаг. Вентилятор
 Очищаем щёткой вентилятор от пыли
 
-![Куллер Series S](https://img.techotters.org/series-s/39.JPG)
+{{< img folder="series-s" src="39.JPG" alt="Куллер Series S" >}}
 
 Затем берём смоченную спиртом салфетку и обезжириваем нижную часть
 
-![Куллер Series S](https://img.techotters.org/series-s/40.JPG)
+{{< img folder="series-s" src="40.JPG" alt="Куллер Series S" >}}
 
 Точно так же с верхней частью
 
-![Куллер Series S](https://img.techotters.org/series-s/41.JPG)
+{{< img folder="series-s" src="41.JPG" alt="Куллер Series S" >}}
 
 Ставим его на плату и обязательно не забываем его подключить
 
-![Куллер Series S](https://img.techotters.org/series-s/42.JPG)
+{{< img folder="series-s" src="42.JPG" alt="Куллер Series S" >}}
+
 ## Шаг одиннацатый. Блок питания
 Почему-то ему совсем мало уделяют внимания. Надо исправить. Блок питания у Series S разбирается так же просто, как и белые крышки. Достаточно тыкнуть чем-нибудь подходящим в соты, указанные стрелочками.
 
-![Блок питания Series S](https://img.techotters.org/series-s/43.JPG)
+{{< img folder="series-s" src="43.JPG" alt="Блок питания Series S" >}}
 
 Внутри нас ждет третья пасхалка — надпись Microsoft. Инженеры не будут так просто наносить надпись на внутреннюю часть корпуса. Это знак вам, что вы добрались до финала.
 
-![Блок питания Series S](https://img.techotters.org/series-s/44.JPG)
+
 
 Ставим блок питания на место и идем с шестого шага в обратном порядке.
 
-![Чистая Series S](https://img.techotters.org/series-s/45.JPG)
