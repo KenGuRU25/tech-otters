@@ -12,12 +12,11 @@
         {{ if $image }}
         <div class="post-image-container">
             <img 
-                class="post-image lazyload" 
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                data-src="{{ $image }}"
+                class="post-image" 
+                src="{{ $image }}"
                 alt="{{ .Title }}"
-                loading="lazy"
                 {{ if .IsPage }}fetchpriority="high"{{ end }}
+                {{ if not .IsPage }}loading="lazy"{{ end }}
             >
         </div>
         {{ end }}
