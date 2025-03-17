@@ -1,5 +1,14 @@
 <article class="post-list h-feed post-card">
     <div class="post-image-wrapper">
+        {{ $firstImage := true }}
+            {{ range .Params.images }}
+                <img class="post-image" 
+                    src="{{ . }}" 
+                    alt="{{ $.Title }}" 
+        {{ if $firstImage }}fetchpriority="high"{{ end }}
+    >
+        {{ $firstImage = false }}
+        {{ end }}
         {{ $image := "" }}
         {{ if .Params.image }}
             {{ if hasPrefix .Params.image "http" }}
