@@ -1,14 +1,5 @@
 <article class="post-list h-feed post-card">
     <div class="post-image-wrapper">
-        {{ $firstImage := true }}
-            {{ range .Params.images }}
-                <img class="post-image" 
-                    src="{{ . }}" 
-                    alt="{{ $.Title }}" 
-        {{ if $firstImage }}fetchpriority="high"{{ end }}
-    >
-        {{ $firstImage = false }}
-        {{ end }}
         {{ $image := "" }}
         {{ if .Params.image }}
             {{ if hasPrefix .Params.image "http" }}
@@ -26,10 +17,12 @@
                 data-src="{{ $image }}"
                 alt="{{ .Title }}"
                 loading="lazy"
+                {{ if .IsPage }}fetchpriority="high"{{ end }}
             >
         </div>
         {{ end }}
     </div>
+    
     <div class="post-content">
         <h1 class="p-name post-title{{ if .Params.favorite }} favorite{{end}}{{ if .Params.draft }} draft{{end}}">
             <a class="u-url" href="{{ .RelPermalink }}">{{ trim .Title " " | markdownify }}</a>
