@@ -7,7 +7,7 @@ theme = "anubis2"
 
 [params]
 sectionPagesMenu = "main"
-mainSections = ["instructions", "reviews"]
+mainSections = ["instructions", "reviews", "news"]
 description = "Мы тестируем, лечим и продлеваем жизнь гаджетам! Профессиональные обзоры, инструкции и хитрости ремонта, чтобы техника служила дольше."
 dateFormat = "02.01.2006"
 paginationSinglePost = true
@@ -31,6 +31,7 @@ social = [
 [permalinks]
 instructions = "/categories/instructions/:slug/"
 reviews = "/categories/reviews/:slug/"
+news = "/categories/news/:slug/"
 faq = "/categories/faq/:slug/"
 authors = "/authors/:slug/"
 

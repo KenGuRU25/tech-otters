@@ -1,14 +1,14 @@
 ---
-slug: sensor-pixel-9
-title: Про камеры девятой серии Google Pixel
-date: 2024-10-03T15:00:51+03:00
+slug: pebble
+title: Pebble возращаются
+date: 2025-10-03T15:00:51+03:00
 description: "Серия Google Pixel 9 демонстрирует интересную эволюцию в развитии камер смартфонов. Сейчас это лучшая селфи камера на рынке"
 authors: 
   - "staspetukhov"
-image: "https://img.techotters.org/sensor-pixel-9/index.webp"
-categories: ['reviews']
-keywords: ["Google"]
-tags: ["Google"]
+image: "https://img.techotters.org/Pebble/pebble.png"
+categories: ['news']
+keywords: ["Pebble"]
+tags: ["Pebble"]
 draft: N
 ---
 
