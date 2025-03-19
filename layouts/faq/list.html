@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="terms-grid">
+    {{ range .Pages }}
+        <div class="term-card">
+                <a href="{{ .RelPermalink }}" class="term-link">
+                    <h2 class="term-title">{{ .Title }}</h2>
+                    {{ with .Params.bio }}
+                    {{ end }}
+                </a>
+            </li>
+    {{ else }}
+        <p>Нет авторов!</p>
+    {{ end }}
+        </div>
+</div>
+{{ end }}
