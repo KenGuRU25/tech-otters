@@ -162,3 +162,7 @@ a:active {
     font-size: 0.9rem;
     color: var(--post-info-color);
   }
+
+table {
+     display: inline;
+    }
