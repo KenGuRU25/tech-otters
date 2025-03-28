@@ -7,7 +7,6 @@
         </nav>
     {{ end }}  */}}
     <article class="post h-entry">
-        {{ partial "breadcrumbs.html" . }}
         <div class="post-header">
             <header>
                 <h1 class="p-name post-title{{ if .Params.favorite }} favorite{{end}}{{ if .Params.draft }} draft{{end}}">{{ trim .Title  " " | markdownify }}</h1>
@@ -19,7 +18,6 @@
         <div class="content e-content">
             {{ .Content }}
         </div>
-
     </article>
     {{ $readNextPosts := 3}}
     {{ if site.Params.readNextPosts }}
