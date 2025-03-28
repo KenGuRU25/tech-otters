@@ -1,8 +1,5 @@
 <h{{ .Level }} id="{{ .Anchor | safeURL }}" {{ if .Attributes.style }}style="{{ .Attributes.style | safeCSS }}"{{ end }}>
-<div>
-    <a href="#{{ .Anchor }}">
-        {{ range seq 2 .Level}}#{{end}}
+    <a href="#{{ .Anchor }}" style="text-decoration: none; color: inherit;">
+        {{ .Text | safeHTML }}
     </a>
-    {{ .Text | safeHTML }}
-</div>
 </h{{ .Level }}>
