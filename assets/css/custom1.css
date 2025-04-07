@@ -1,33 +1,90 @@
-/* Базовые стили */
-html {
+/* Базовые стили и переменные */
+:root {
+    --font-size-small: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-large: 1.25rem;
+    
+    --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-family-headings: Gilroy, Arial, Helvetica, sans-serif;
+    
+    --line-height-tight: 1.2;
+    --line-height-base: 1.5;
+    --line-height-loose: 1.8;
+    
     --post-info-color: #545454 !important;
-}
+  }
 
-@font-face {
-    font-family: 'Gilroy';
-    src: url('/fonts/subset-Gilroy-Light.woff2') format('woff2'),
-         url('/fonts/subset-Gilroy-Light.woff') format('woff');
-    font-weight: 300; /* Light */
+  html {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+  }
+  
+  body {
+    font-family: var(--font-family-base);
+    color: var(--font-color);
+    background: var(--bg-color);
+    font-size: var(--font-size-base);
+  }
+  
+  @font-face {
+    font-family: "Gilroy";
+    src: url("/fonts/subset-Gilroy-Light.woff2") format("woff2"), url("/fonts/subset-Gilroy-Light.woff") format("woff");
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
-}
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-headings);
+    line-height: var(--line-height-tight);
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-size: var(--font-size-large);
+    font-weight: 600;
+  }
+  
+  h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    margin-top: 2rem;
+  }
+  
+  h3, h4, h5, h6 {
+    margin-top: 1.5rem;
+    font-weight: 500;
+  }
+  
+  p, li, td, th, blockquote, figcaption {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    margin-bottom: 1rem;
+  }
+  
+  .post-meta, .post-date, .reading-time, .post-tag, 
+  .post-info, .term-count, .breadcrumbs, 
+  footer, .post-pagination, .pagination, 
+  .post-authors, .post-tags, .post-categories,
+  .term-description, .common-footer, .footer-menu {
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-base);
+  }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: Gilroy, Arial, Helvetica, sans-serif;
-}
-h1 {
-    font-size: 1.056666em;
-}
-
-a   {   
-    border-bottom: none;
-}
-a:hover,
-a:focus,
-a:active {
+  a {
+    color: var(--link-color);
     text-decoration: none;
-    border-bottom: none;
-}
+    border-bottom: none; /* Убираем нижнюю границу */
+    transition: color 0.2s ease-in-out;
+  }
+  
+  a:hover,
+  a:focus {
+    color: var(--link-state-color); /* Меняем только цвет при наведении */
+    border-bottom: none; /* Убеждаемся, что нижней границы нет при наведении */
+    text-decoration: none; /* Убеждаемся, что подчеркивания нет */
+  }
 
 /* Стили для карточек постов */
 .post-list {
