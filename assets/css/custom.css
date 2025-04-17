@@ -75,15 +75,15 @@
   a {
     color: var(--link-color);
     text-decoration: none;
-    border-bottom: none; /* Убираем нижнюю границу */
+    border-bottom: none;
     transition: color 0.2s ease-in-out;
   }
   
   a:hover,
   a:focus {
-    color: var(--link-state-color); /* Меняем только цвет при наведении */
-    border-bottom: none; /* Убеждаемся, что нижней границы нет при наведении */
-    text-decoration: none; /* Убеждаемся, что подчеркивания нет */
+    color: var(--link-state-color);
+    border-bottom: none;
+    text-decoration: none;
   }
 
 /* Стили для карточек постов */
@@ -174,7 +174,6 @@
     padding: 0;
     list-style-type: none;
 }
-/* Существующие стили... */
 
 /* Стили термс */
 .terms-title {
