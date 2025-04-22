@@ -1,6 +1,6 @@
 ---
 title: "Стас Петухов"
-slug: "staspetukhov"
+slug: "Goosta"
 bio: "Технический эксперт, специализируется на электронике и ремонте устройств."
 image: "/images/authors/stas-petukhov.jpg"
 ---
