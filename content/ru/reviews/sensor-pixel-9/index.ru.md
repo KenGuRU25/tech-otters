@@ -4,7 +4,7 @@ title: Про камеры девятой серии Google Pixel
 date: 2024-10-03T15:00:51+03:00
 description: "Серия Google Pixel 9 демонстрирует интересную эволюцию в развитии камер смартфонов. Сейчас это лучшая селфи камера на рынке"
 authors: 
-  - "staspetukhov"
+  - "Goosta"
 image: "https://img.techotters.org/sensor-pixel-9/index.webp"
 categories: ['reviews']
 keywords: ["Google"]

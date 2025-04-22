@@ -4,7 +4,7 @@ title: Pebble возращаются
 date: 2024-10-03T15:00:51+03:00
 description: "Серия Google Pixel 9 демонстрирует интересную эволюцию в развитии камер смартфонов. Сейчас это лучшая селфи камера на рынке"
 authors: 
-  - "staspetukhov"
+  - "Goosta"
 image: "https://img.techotters.org/Pebble/pebble.png"
 categories: ['news']
 keywords: ["Pebble"]
