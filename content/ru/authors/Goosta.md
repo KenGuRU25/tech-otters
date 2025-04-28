@@ -1,7 +1,7 @@
 ---
-title: "Стас Петухов"
+title: "Goosta"
 slug: "Goosta"
-bio: "Технический эксперт, специализируется на электронике и ремонте устройств."
+bio: "Создатель и эксперт проекта Tech Otters, специализация - смартфоны"
 image: "/images/authors/stas-petukhov.jpg"
 ---
 
