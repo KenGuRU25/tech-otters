@@ -2,13 +2,13 @@ baseURL = "https://techotters.org/"
 defaultContentLanguage = "ru"
 defaultContentLanguageInSubdir = true
 languageCode = "ru-RU"
-title = "tech {otters}"
+title = "Tech Otters – инструкции и обзоры от специалистов"
 theme = "anubis2"
 
 [params]
 sectionPagesMenu = "main"
 mainSections = ["instructions", "reviews", "news"]
-description = "Мы тестируем, лечим и продлеваем жизнь гаджетам! Профессиональные обзоры, инструкции и хитрости ремонта, чтобы техника служила дольше."
+description = "Пишут технические специалисты с реальным опытом: инструкции, диагностика и ремонт. Проект независим, без рекламы и спонсоров."
 dateFormat = "02.01.2006"
 paginationSinglePost = true
 customCSS = ["css/custom.css"]
