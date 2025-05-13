@@ -8,6 +8,16 @@
 {{ with .Keywords }}
     <meta name="keywords" content="{{ range $i, $e := . }}{{ if $i }},{{ end }}{{ $e }}{{ end }}">
 {{ end }}
+
+<!-- Canonical -->
+<link rel="canonical" href="{{ .Permalink | safeURL }}">
+
+<!-- Hreflang -->
+{{- range .Translations }}
+  <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink | safeURL }}">
+{{- end }}
+<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink | safeURL }}">
+
 {{ if and (.IsPage) (eq .Params.hidden true)}}
 <meta name="robots" content="noindex" />
 {{ end }}
