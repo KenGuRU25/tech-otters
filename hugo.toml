@@ -8,7 +8,7 @@ theme = "anubis2"
 [params]
 sectionPagesMenu = "main"
 mainSections = ["instructions", "reviews", "news"]
-description = "Не читаем по брифу, не лепим рейтинги и не лижем бренды. Честные обзоры, инструкции и ремонт гаджетов и техники без воды и маркетинга."
+description = "Не читаем по брифу, не лепим рейтинги и не лижем бренды — честные гайды и обзоры гаджетов глазами настоящих специалистов."
 dateFormat = "02.01.2006"
 paginationSinglePost = true
 customCSS = ["css/custom.css"]
