@@ -8,7 +8,7 @@ theme = "anubis2"
 [params]
 sectionPagesMenu = "main"
 mainSections = ["instructions", "reviews", "news"]
-description = "Пишут технические специалисты с реальным опытом: инструкции, диагностика и ремонт. Проект независим, без рекламы и спонсоров."
+description = "Не читаем по брифу, не лепим рейтинги, не лижем бренды"
 dateFormat = "02.01.2006"
 paginationSinglePost = true
 customCSS = ["css/custom.css"]

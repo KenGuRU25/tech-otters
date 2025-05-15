@@ -1,8 +1,8 @@
 <title>
     {{ if .IsHome }}
-        Tech Otters – инструкции и обзоры от специалистов
+        Tech Otters – душно про гаджеты
     {{ else if .Title }}
-        {{ .Title | markdownify }} | {{ .Site.Title | markdownify }}
+        {{ .Title | markdownify }} - {{ .Site.Title | markdownify }}
     {{ else }}
         {{ .Site.Title | markdownify }}
     {{ end }}
