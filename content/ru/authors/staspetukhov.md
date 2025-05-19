@@ -1,6 +1,6 @@
 ---
-title: "Goosta"
-slug: "Goosta"
+title: "Стас Петухов"
+slug: "staspetukhov"
 bio: "Создатель и эксперт проекта Tech Otters, специализация - смартфоны"
 image: "/images/authors/stas-petukhov.jpg"
 ---
