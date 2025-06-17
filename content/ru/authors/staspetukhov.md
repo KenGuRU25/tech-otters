@@ -1,5 +1,5 @@
 ---
-title: "Стас Петухов"
+title: "Петухов Станислав"
 slug: "staspetukhov"
 bio: "Создатель и эксперт проекта Tech Otters, специализация - смартфоны"
 image: "/images/authors/stas-petukhov.jpg"
