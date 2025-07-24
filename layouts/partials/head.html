@@ -36,20 +36,24 @@
 {{ if and (.IsPage) (eq .Params.hidden true)}}
 <meta name="robots" content="noindex" />
 {{ end }}
+
 {{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 {{ end -}}
+
 {{ partial "favicons.html" . }}
 {{ $colorTheme := "light" }}
 {{ $colorThemeSwitcher := true }}
 {{ if and (isset site.Params "colortheme") (ne site.Params.colortheme "") }}
     {{ $colorTheme = site.Params.colortheme | lower }}
 {{ end }}
+
 {{ if isset site.Params "colorthemeswitcher" }}
     {{ $colorThemeSwitcher = site.Params.colorthemeswitcher }}
 {{ else }}
     {{ $colorThemeSwitcher = true }}
 {{ end }}
+
 {{ if or (eq $colorThemeSwitcher true) (eq $colorTheme "auto") }}
 <style>
   body {
@@ -66,6 +70,7 @@
   </style>
 </noscript>
 {{end}}
+
 {{ partial "resource.html" (dict "context" . "type" "css" "filename" "css/main.css") }}
 {{ partial "resource.html" (dict "context" . "type" "css" "filename" "css/light.css") }}
 {{ partial "resource.html" (dict "context" . "type" "css" "filename" "css/dark.css") }}
